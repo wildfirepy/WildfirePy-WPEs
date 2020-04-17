@@ -4,6 +4,11 @@ Essential Tasks
 
 This document highlights the essential tasks that need to be done before we go public.
 
+0) Purpose of the project and its documentation
+"""""""""""""""""""""""""""""""""""""""""""""""
+* We need to have a document explaining purpose of this project.
+
+* We also need a document containing information regarding this project.
 
 1) Identification of data sources
 """""""""""""""""""""""""""""""""
