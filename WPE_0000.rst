@@ -1,8 +1,8 @@
-==================
-First Set of Tasks
-==================
+===============
+Essential Tasks
+===============
 
-This document highlights the first set of tasks that need to be done before we go public.
+This document highlights the essential tasks that need to be done before we go public.
 
 
 1) Identification of data sources
@@ -22,4 +22,18 @@ This document highlights the first set of tasks that need to be done before we g
 
 * The idea here is to get a unified API where we can get different types of data from various sources using a single interface.
 
- 
+3) Continous Integration and tests
+""""""""""""""""""""""""""""""""""
+* Configuring CI and the tests.
+
+* We'll use Circle and Azure.
+
+4) Docs and website
+"""""""""""""""""""
+* Docs explaining the repo, the mission, current modules and future plans.
+
+* We will use sphinx for this.
+
+5) Templates for issues, PRs, etc.
+""""""""""""""""""""""""""""""""""
+* Add basic template for different types of issues, PRs.
