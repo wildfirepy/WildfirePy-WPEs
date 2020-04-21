@@ -1,6 +1,12 @@
 from pyproj import Proj
 import math
-
+import requests
+import urllib
+import urllib.request
+from urllib.request import HTTPPasswordMgrWithDefaultRealm, HTTPBasicAuthHandler, HTTPCookieProcessor
+from requests.exceptions import HTTPError
+from http.cookiejar import CookieJar
+from pathlib import Path
 class SinusoidalCoordinate():
     """
     Converts latitude and longitude in degrees to MODIS Sinusoidal grid coordinates.
@@ -24,3 +30,29 @@ class SinusoidalCoordinate():
         v = -(self.EARTH_WIDTH * 0.25 + y - self.VERTICAL_TILES  * self.TILE_HEIGHT) / self.TILE_HEIGHT
         return int(h), int(v)
 
+class DownloaderWithRedirect():
+
+    def __init__(self, username='RaahulSingh', password='WildFire_Bad.100', 
+                top_level_url = "https://urs.earthdata.nasa.gov/"):
+
+        auth_manager = HTTPPasswordMgrWithDefaultRealm()
+        auth_manager.add_password(None, top_level_url, username, password)
+        handler = HTTPBasicAuthHandler(auth_manager)
+        self.opener = urllib.request.build_opener(handler, HTTPCookieProcessor(CookieJar()))
+
+    def fetch(self, url, path='./', filename='temp.hdf'):
+
+        data_folder = Path(path)
+        filename = data_folder / filename
+        try:
+            response = self.opener.open(url)
+            print("Download Successful!")
+            print("Writing file!")
+            with open(filename, 'wb') as file:
+                file.write(response.read())
+            response.close()
+            return filename
+        
+        except urllib.request.HTTPError as err:
+            output = format(err)
+            print(output)
