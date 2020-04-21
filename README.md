@@ -14,3 +14,5 @@ Note that there is not sufficient ground for making proposals unless someone or 
 
 
 ## Updating the WPEs
+
+In the cases where an updated WPE requires revision (e.g. references to a new WPE that supercedes it, clarifying information that emerges after the WPE is accepted, etc.), changes can be made directly via PR, but the "date-last-revised" should be updated in the WPE also. Additionally, the corresponding Zenodo entry will need to be updated with a new version of the WPE (but not with a completely new Zenodo entry), by using the "New version" button and then filling out the forms as described above.
