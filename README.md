@@ -6,7 +6,7 @@ WPEs are documents used to address non-trivial major enhancements which require 
 
 ## Proposing a new WPE
 
-New WPEs should be created using the `WPEtemplate.md` file in this repository. Please fork the repository, copy WPEtemplate.md to WPE_<some_working_name>.md and open a Pull Request to add that file in this repository once you've written up the WPE (a little explanation is required in the PR itself given that the document has all the self-explanatory content - usually it's easiest to just paste the abstract to the PR descrption). The WPE number will be assigned once the PR is merged.
+New WPEs should be created using the `WPEtemplate.rst` file in this repository. Please fork the repository, copy WPEtemplate.rst to WPE_<some_working_name>.rst and open a Pull Request to add that file in this repository once you've written up the WPE (a little explanation is required in the PR itself given that the document has all the self-explanatory content - usually it's easiest to just paste the abstract to the PR descrption). The WPE number will be assigned once the PR is merged.
 
 Note that there is not sufficient ground for making proposals unless someone or some group has signed up to implement it once the WPE is accepted (typically this would involve the author or authors of the WPE). Just submiting a WPE in order to spur others to do work is not the expected practice. Generally, an implementation should have been begun before a WPE can be considered fully accepted. For proposals that require extensive follow-up work that few are willing to commit, provisional acceptance is an option. For serious consideration it is usually a good idea to show that detailed technical aspects have been covered with real code samples. [NB: This point only applies to non-governance WPEs.]
 
@@ -18,7 +18,7 @@ The final decision on accepting or rejecting proposed WPEs lies with the `Wildfi
 
 2. Update the "date-last-revised" to the day of merging and "status" to either "Accepted" or "Rejected".
 
-3. If necessary, rename the WPE file to be WPE##.md, where ## is the next free number on the list of WPEs.
+3. If necessary, rename the WPE file to be WPE##.rst, where ## is the next free number on the list of WPEs.
 
 4. Leave a brief comment in the PR indicating the result.
 
@@ -30,7 +30,7 @@ The final decision on accepting or rejecting proposed WPEs lies with the `Wildfi
 
 8. Get the source for the DOI badge from the newly-created Zenodo record page by clicking on the DOI badge on the right side of the page and copying the entire reStructuredText source.
 
-9. On GitHub (or locally) edit README.md and add an entry for the new EPE to the "Accepted WPEs" table. Use the DOI link from the previous step. Add corresponding MD link refs for both the DOI link and the new WPE. Preview the update and test the links to make sure they are all correct. Then commit directly to master (or through a PR if one prefers).
+9. On GitHub (or locally) edit README.rst and add an entry for the new EPE to the "Accepted WPEs" table. Use the DOI link from the previous step. Add corresponding MD link refs for both the DOI link and the new WPE. Preview the update and test the links to make sure they are all correct. Then commit directly to master (or through a PR if one prefers).
 
 10. Send an email to the `WildfilePy` community emailing list announcing the acceptance. In general this should just point to the accepted WPE rather than providing additional decision rationale in support of its acceptance or rejection.
 
