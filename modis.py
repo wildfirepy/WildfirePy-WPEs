@@ -51,8 +51,8 @@ class DownloaderWithRedirect():
             with open(filename, 'wb') as file:
                 file.write(response.read())
             response.close()
-            return filename
-        
+            return filename.name
+
         except urllib.request.HTTPError as err:
             output = format(err)
             print(output)
