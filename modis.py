@@ -55,6 +55,7 @@ class ModisDownloader():
         self.regex_traverser = RegexHTMLParser()
         self.converter = SinusoidalCoordinate()
         self.url_opener = URLOpenerWithRedirect()
+        self.has_files = False
 
     def get_available_dates(self):
         self.regex_traverser(self.base_url)
@@ -64,6 +65,7 @@ class ModisDownloader():
         month = str(month) if month > 9 else "0" + str(month)
         date = f"{str(year)}.{month}.01/"
         self.regex_traverser(self.base_url + date)
+        self.has_files = True
         return self.get_available_files()
 
     def get_available_files(self):
@@ -74,23 +76,37 @@ class ModisDownloader():
         return self.regex_traverser.get_filename(h, v)
 
     def get_hdf(self, *, year, month, latitude, longitude):
+
+        if not self.has_files:
+            self.get_files_from_date(year, month)
+
+        filename = self.get_filename(latitude, longitude)
         month = str(month) if month > 9 else "0" + str(month)
         date = f"{str(year)}.{month}.01/"
-        filename = self.get_filename(latitude, longitude)
         url = self.base_url + date + filename
         return self.fetch(url=url, filename=filename)
 
     def get_xml(self, *, year, month, latitude, longitude):
+
+        if not self.has_files:
+            self.get_files_from_date(year, month)
+
+        filename = self.get_filename(latitude, longitude) + ".xml"
+
         month = str(month) if month > 9 else "0" + str(month)
         date = f"{str(year)}.{month}.01/"
-        filename = self.get_filename(latitude, longitude) + ".xml"
         url = self.base_url + date + filename
         return self.fetch(url=url, filename=filename)
 
     def get_jpg(self, *, year, month, latitude, longitude):
+
+        if not self.has_files:
+            self.get_files_from_date(year, month)
+
+        filename = "BROWSE." + self.get_filename(latitude, longitude)[:-3] + "1.jpg"
+
         month = str(month) if month > 9 else "0" + str(month)
         date = f"{str(year)}.{month}.01/"
-        filename = "BROWSE." + self.get_filename(latitude, longitude)[:-3] + "1.jpg"
         url = self.base_url + date + filename
         return self.fetch(url=url, filename=filename)
 
@@ -132,4 +148,8 @@ class RegexHTMLParser():
         coord = 'h{h}v{v}'
         r = re.compile(r'.*' + f'.(h{h}v{v}).')
 
-        return list(filter(r.match, self.get_all_hdf_files()))[0]
+        match = list(filter(r.match, self.get_all_hdf_files()))
+        if len(match) == 0:
+            raise UserWarning("No file exists for given coordinates.")
+
+        return match[0]
