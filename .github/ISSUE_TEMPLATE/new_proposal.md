@@ -2,7 +2,7 @@
 name: New Proposal
 about: Use this template for making new proposals.
 title: "Proposal: [Proposal Description]"
-labels: proposal
+labels: new proposal
 ---
 
 ### Proposal File:
@@ -19,3 +19,8 @@ Add breif Description
 <!---
 Breifly explain Implementation Status
 -->
+
+## Task list
+
+ - [ ] <!--Task1-->
+ - [ ] <!--Task2-->
