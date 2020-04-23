@@ -1,8 +1,8 @@
 ---
-name: Update Proposal
-about: Use this template for suggesting update to existing proposal.
+name: Suggest Changes
+about: Use this template for suggesting changes to existing proposal.
 title: "Suggestion for Proposal #[Number]: [Describe Suggestion]"
-labels: update proposal
+labels: suggestion
 ---
 
 ### Proposal #:
