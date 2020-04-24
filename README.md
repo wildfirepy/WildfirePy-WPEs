@@ -6,7 +6,7 @@ WPEs are documents used to address non-trivial major enhancements which require 
 
 ## Proposing a new WPE
 
-New WPEs should be created using the `WPE-template.rst` file in this repository. Please fork the repository, copy `WPE-template.rst` to `WPE\_<some_working_name>.rst` and open a Pull Request to add that file in this repository once you've written up the WPE (a little explanation is required in the PR itself given that the document has all the self-explanatory content - usually it's easiest to just paste the abstract to the PR descrption). The WPE number will be assigned once the PR is merged.
+New WPEs should be created using the `WPE-template.rst` file in this repository. Please fork the repository, copy `WPE-template.rst` to `WPE_<some_working_name>.rst` and open a Pull Request to add that file in this repository once you've written up the WPE (a little explanation is required in the PR itself given that the document has all the self-explanatory content - usually it's easiest to just paste the abstract to the PR descrption). The WPE number will be assigned once the PR is merged.
 
 Note that there is not sufficient ground for making proposals unless someone or some group has signed up to implement it once the WPE is accepted (typically this would involve the author or authors of the WPE). Just submiting a WPE in order to spur others to do work is not the expected practice. Generally, an implementation should have been begun before a WPE can be considered fully accepted. For proposals that require extensive follow-up work that few are willing to commit, provisional acceptance is an option. For serious consideration it is usually a good idea to show that detailed technical aspects have been covered with real code samples. [NB: This point only applies to non-governance WPEs.]
 
@@ -18,7 +18,7 @@ The final decision on accepting or rejecting proposed WPEs lies with the `Wildfi
 
 2. Update the "date-last-revised" to the day of merging and "status" to either "Accepted" or "Rejected".
 
-3. If necessary, rename the WPE file to be `WPE\_##.rst`, where ## is the next free number on the list of WPEs.
+3. If necessary, rename the WPE file to be `WPE_##.rst`, where `##` is the next free number on the list of WPEs.
 
 4. Leave a brief comment in the PR indicating the result.
 
