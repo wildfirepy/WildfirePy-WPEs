@@ -6,6 +6,7 @@ labels: new proposal
 ---
 
 ### Proposal File:
+
 ### Status:
 
 ## Description
@@ -22,5 +23,5 @@ Breifly explain Implementation Status
 
 ## Task list
 
- - [ ] <!--Task1-->
- - [ ] <!--Task2-->
+- [ ] <!--Task1-->
+- [ ] <!--Task2-->

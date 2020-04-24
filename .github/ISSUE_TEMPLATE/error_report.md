@@ -6,7 +6,9 @@ labels: error
 ---
 
 ### Proposal #:
+
 ### Status:
+
 ### Error Severity:
 
 ## Description
