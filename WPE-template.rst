@@ -1,4 +1,4 @@
-<EPE title here>
+<WPE title here>
 ----------------
 
 Authors: <your name>
