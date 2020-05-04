@@ -30,7 +30,7 @@ The final decision on accepting or rejecting proposed WPEs lies with the `Wildfi
 
 8. Get the source for the DOI badge from the newly-created Zenodo record page by clicking on the DOI badge on the right side of the page and copying the entire reStructuredText source.
 
-9. On GitHub (or locally) edit README.md and add an entry for the new EPE to the "Accepted WPEs" table. Use the DOI link from the previous step. Add corresponding MD link refs for both the DOI link and the new WPE. Preview the update and test the links to make sure they are all correct. Then ask someone with push access to the repository to review the final PR.
+9. On GitHub (or locally) edit `README.md` and add an entry for the new EPE to the "Accepted WPEs" table. Use the DOI link from the previous step. Add corresponding MD link refs for both the DOI link and the new WPE. Preview the update and test the links to make sure they are all correct. Then ask someone with push access to the repository to review the final PR.
 
 10. Send an email to the `WildfilePy` community's mailing list announcing the acceptance. In general, this should just point to the accepted WPE rather than providing additional decision rationale in support of its acceptance or rejection.
 
