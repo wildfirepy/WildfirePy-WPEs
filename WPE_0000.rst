@@ -1,0 +1,121 @@
+WPEs
+----
+
+Authors: Ram Nad (@ram-nad), Kris Stern (@kakirastern)
+
+date-created: 2020 May 4
+
+date-last-revised: 2020 May 4
+
+status: Accepted
+
+
+Related WPEs
+------------
+
+
+Abstract
+--------
+
+WPE stands for WildfirePy Proposal for Enhancement. It is a document explaining the purpose,
+design, and implementation of possible major additions to the WildfirePy Project.
+The purpose of this document is to explain the motivation behind WPEs and establish it as the
+primary method for proposing major changes to the WildfirePy Project.
+
+
+Motivation
+----------
+
+The primary motivation behind WPEs is to establish a clear and open way for everyone
+to propose changes to the WildfirePy Project. A WPE provides all the necessary information
+related to the proposed change(s) while also serves as the specification for addition/update
+to the codebase. Other key benefits of this system are:
+
+ - To provide a way to track the origin of ideas
+ - To encourage everyone to contribute to the project
+ - To makes it easy to use WPE's git history to track updates and changes
+ - To allow storage and sharing of contents easily
+
+
+Detailed description
+--------------------
+
+A WPE will contain the following information:
+
+`Authors`: Primary authors of the WPE.
+
+`Status`: Status of the WPE, either *accepted* or *rejected*.
+
+`Date of Proposal`: Date when the WPE is first proposed.
+
+`Date of Update`: Date of the last update to the WPE. For example, if a particular implementation
+detail is changed later, WPE will be updated accordingly and the date of update needs to be
+changed.
+
+`Related WPEs`: List of related WPEs. For example, if new WPE proposes update to
+a feature put forward by a previous WPE.
+
+`Decision Rationale`: Summary of the rationale behind either accepting or rejecting a WPE.
+
+`Contributors`: People who have contributed ideas to the WPE.
+
+`Link to previous versions`: The GitHub links to previous merged versions of the WPE.
+
+Apart from the above, a WPE will contain an abstract outlining the major parts of a WPE,
+the motivation behind the WPE, detailed description, implementation details, and references
+to external resources if any.
+
+Updates to WPEs will be considered under the following circumstances:
+
+ - Grammatical correction(s)
+ - Changes in implementation
+ - Minor changes, that do not require a major update to the codebase
+ - Changes that depend on external factors like data sources or project dependencies
+
+Other than the conditions stated above, changes to the WPEs will not be considered.
+For making any other changes to the features introduced by a particular WPE,
+a new WPE will need to be created. If a WPE is updated later by a new WPE,
+it is expected that the old WPE will be updated as well to point to the new WPE.
+
+Whenever a WPE is updated after it is merged, it should add a link
+to the previous version of the WPE.
+
+Also, it is expected that a group of people will be ready to undertake the task of
+updating code per the WPE if it is accepted. It might be difficult to accept WPE
+without a commitment from at least one person.
+
+
+Implementation
+--------------
+
+A new GitHub repository `WildfirePy-WPEs` will be made. Anyone willing to make a WPE
+will need to send a Pull Request to this repository. The discussion over that WPE
+will take place in the GitHub PR thread.
+
+After a consensus is reached to either accept or reject a WPE, the `Decision Rationale`
+and `Status` must be updated accordingly, and finally the WPE will
+be assigned a sequential number.
+
+Also, each WPE will have a DOI badge that needs to be generated and added to
+the `README.md` of the repository before PR is finally merged. The badge needs
+to be regenerated for updated WPEs.
+
+
+References
+----------
+
+This WPE is inspired by `EinsteinPy's EPEs <https://google.com>`_.
+
+
+Decision rationale
+------------------
+
+
+Contributors
+------------
+
+Raahul Singh (@Raahul-Singh)
+
+
+Previous Versions
+-----------------
