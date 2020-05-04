@@ -60,3 +60,17 @@ Decision rationale
 
 To be filled in based on the final decision regarding
 acceptance or rejection of this WPE.
+
+
+Contributors
+------------
+
+Add names of all the people who have contributed to this WPE.
+Name1 (@userid), Name2 (@userid)
+
+
+Previous Versions
+-----------------
+
+Add links to previous versions of document after update.
+<Date> <Status> <Link>
