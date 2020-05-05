@@ -104,7 +104,7 @@ to be regenerated for updated WPEs.
 References
 ----------
 
-This WPE is inspired by `EinsteinPy's EPEs <https://google.com>`_.
+This WPE is inspired by `EinsteinPy's EPEs <https://github.com/einsteinpy/EinsteinPy-EPEs>`_.
 
 
 Decision rationale
