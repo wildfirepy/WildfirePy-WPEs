@@ -104,17 +104,21 @@ to be regenerated for updated WPEs.
 References
 ----------
 
-This WPE is inspired by `EinsteinPy's EPEs <https://github.com/einsteinpy/EinsteinPy-EPEs>`_.
+This WPE is inspired by `EinsteinPy's EPEs <https://github.com/EinsteinPy-EPEs>`_.
 
 
 Decision rationale
 ------------------
 
+The members of the community had discussions over the WPE proposal and came to a
+conclusion that the method proposed in this document is fitting with the requirements
+of the community.
+
 
 Contributors
 ------------
 
-Raahul Singh (@Raahul-Singh)
+Raahul Singh (@Raahul-Singh), Abhijeet Manhas (@abhijeetmanhas)
 
 
 Previous Versions
