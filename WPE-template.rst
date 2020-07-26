@@ -33,7 +33,7 @@ Detailed description
 --------------------
 
 This section should describe the existing problem that it is trying to solve 
-and how this WPE solves it. Link relevant issues should be put here.
+and how this WPE solves it. Link to relevant issues should be put here.
 It should include examples of how the new functionality would be used 
 and perhaps some use cases.
 
@@ -43,8 +43,8 @@ Implementation
 
 This section lists the major steps required to implement the WPE. Where
 possible, it should be noted where one step is dependent on another, 
-and which steps may be optionally omitted. If Implementation is under process 
-please provide links to them. If Implementation hasn't begun yet, 
+and which steps may be optionally omitted. If implementation is under process 
+please provide links to them. If implementation hasn't begun yet, 
 please include the names of the people who have shown interest in implementing it.
 
 
